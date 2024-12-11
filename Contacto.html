@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="Estilos/styles_contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav>
+    <div class="menu-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Img/logo.svg" alt="Logo" class="logo-img">
+            </a>        </div>
+        <!-- Contenedor de los enlaces del menú -->
+        <div class="menu-items" id="menu-items">
+            <a href="index.html">Inicio</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Paquetes.html">Paquetes</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+        <!-- Botón de Menú Hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+        </div>
+    </div>
+</nav>
+
+    <!-- Sección de Mapa -->
+    <div class="container">
+        <section class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000000!2d-78.500000!3d-7.150000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sCajamarca!5e0!3m2!1ses!2spe!4v0000000000000" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- Sección de Información de Contacto -->
+        <section class="contact-info">
+            <h2>Contáctenos</h2>
+            <p>Celular: <a href="tel:+900693140">900693140</a></p>
+            <p>Whatsapp: <a href="https://wa.me/900693140" target="_blank">900693140</a></p>
+            <p>Email: <a href="mailto:reservas@tmtravel.pe">info@ritmoandino.com</a></p>
+            <p>Email alternativo: <a href="mailto:nawpa@tmtravel.pe">nawpa@ritmoandino.pe</a></p>
+            <p>Dirección: Av. Independencia 787 Cajamarca, Perú </p>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact-form">
+            <h2>Escríbenos</h2>
+            <form action="submit.php" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+
+                <label for="numero">Número de contacto</label>
+                <input type="tel" id="numero" name="numero" placeholder="Número de contacto">
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="TérminosCondi.html">Términos y Condiciones</a></li>
+                    <li><a href="PoliticaPriv.html">Política y Privacidad</a></li>
+                    <li><a href="LibSugerencias.html">Buzón de Sugerencias</a></li>
+                    <li><a href="LibReclamaciones.html"><i class="fas fa-book"></i> Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +51 900 693 140</p>
+                <p><i class="fas fa-envelope"></i> info@ritmoandino.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Independencia 787 Cajamarca, Perú</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/ritmo.andino.2024/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ritmo_andino2024/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Ritmo_Andino"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com/@ritmoandino2024?si=JHHBY-_9ZGddXfm1"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 RitmoAndino - Agencia de Viajes | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Java/index.js"></script>
+
+</body>
+</html>

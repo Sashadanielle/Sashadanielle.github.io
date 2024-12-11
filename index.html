@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes - Tu Aventura</title>
+    <link rel="stylesheet" href="Estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<!-- Barra de navegación -->
+<nav>
+    <div class="menu-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Img/logo.svg" alt="Logo" class="logo-img">
+            </a>        </div>
+        <!-- Contenedor de los enlaces del menú -->
+        <div class="menu-items" id="menu-items">
+            <a href="index.html">Inicio</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Paquetes.html">Paquetes</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+        <!-- Botón de Menú Hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-content">
+            <span>Cajamarca - Perú</span>
+            <h1>Descubre la historia y el misterio de Cajamarca, <br> el corazón del Perú</h1>
+            <p>¡Ven a vivirla!🤩</p>
+            <a href="Tours.html">
+                <button>Conocer Más</button>
+            </a>
+        </div>
+        <!-- Botones de Navegación -->
+        <button class="banner-btn banner-prev" aria-label="Imagen anterior">&lt;</button>
+        <button class="banner-btn banner-next" aria-label="Imagen siguiente">&gt;</button>
+    </section>
+
+    <section class="tours-carousel-section">
+        <h2>🌟 Vive una experiencia inolvidable 🌟</h2>
+        <div class="carousel">
+            <!-- Botón izquierdo -->
+            <button class="carousel-btn prev" aria-label="Anterior">
+                &#10094;
+            </button>
+    
+            <!-- Contenedor de slides -->
+            <ul class="carousel-track">
+                <!-- Tour 1 -->
+                <li class="carousel-slide">
+                    <img src="Img-Carrusel/Tour1.webp" alt="Ventanillas de Otuzco, Cajamarca">
+                    <div class="slide-caption">
+                        <h3>Ventanillas de Otuzco</h3>
+                        <p>Explora la historia y el misterio de las antiguas ventanillas funerarias.</p>
+                    </div>
+                </li>
+    
+                <!-- Tour 2 -->
+                <li class="carousel-slide">
+                    <img src="Img-Carrusel/Tour2.jpg" alt="Alameda de los 14 incas">
+                    <div class="slide-caption">
+                        <h3>Alameda de los 14 Incas</h3>
+                        <p>Un paseo emblemático lleno de historia y tradición en Cajamarca.</p>
+                    </div>
+                </li>
+    
+                <!-- Tour 3 -->
+                <li class="carousel-slide">
+                    <img src="Img-Carrusel/Tour3.jpg" alt="Gran Plaza de Armas">
+                    <div class="slide-caption">
+                        <h3>Gran Plaza de Armas</h3>
+                        <p>El corazón de la ciudad con una impresionante arquitectura colonial.</p>
+                    </div>
+                </li>
+    
+                <!-- Tour 4 -->
+                <li class="carousel-slide">
+                    <img src="Img-Carrusel/Tour4.jpg" alt="Cumbemayo">
+                    <div class="slide-caption">
+                        <h3>Cumbemayo</h3>
+                        <p>Descubre uno de los complejos arqueológicos más importantes del Perú.</p>
+                    </div>
+                </li>
+            </ul>
+    
+            <!-- Botón derecho -->
+            <button class="carousel-btn next" aria-label="Siguiente">
+                &#10095;
+            </button>
+        </div>
+    </section>
+    
+
+
+    <section class="newsletter">
+        <h3>Suscríbete a nuestra plataforma y entérate de miles de ofertas</h3>
+        <div class="newsletter-container">
+            <img src="Img-Clientes/Subs.svg" alt="Suscríbete" class="newsletter-img">
+            <form id="newsletter-form">
+                <input type="email" placeholder="Ingresa tu correo" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <p id="success-message" style="display: none; color: green; margin-top: 10px;">
+                ¡Suscripción realizada con éxito!
+            </p>
+        </div>
+    </section>
+
+    <a href="https://wa.me/51900693140" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    
+    
+
+<!-- Sección de Testimonios -->
+<section class="testimonios">
+    <h4>Comentarios de Nuestros Clientes</h4>
+    <div class="testimonios-grid">
+        <div class="comentario">
+            <img src="Img-Clientes/Cliente1.svg" alt="Juan Pérez" class="cliente-imagen">
+            <h2>Juan Pérez</h2>
+            <p>"Excelente servicio, los tours son de gran calidad."</p>
+            <div class="estrellas">★★★★★</div>
+        </div>
+        <div class="comentario">
+            <img src="Img-Clientes/Cliente2.svg" alt="María López" class="cliente-imagen">
+            <h2>María López</h2>
+            <p>"Muy satisfecha con la atención, siempre dispuestos a ayudar."</p>
+            <div class="estrellas">★★★★☆</div>
+        </div>
+        <div class="comentario">
+            <img src="Img-Clientes/Cliente3.svg" alt="Pedro Rodríguez" class="cliente-imagen">
+            <h2>Pedro Rodríguez</h2>
+            <p>"Sin duda volveré a viajar, todo fue muy rápido y fácil."</p>
+            <div class="estrellas">★★★★★</div>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Pie de página -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="TérminosCondi.html">Términos y Condiciones</a></li>
+                        <li><a href="PoliticaPriv.html">Política y Privacidad</a></li>
+                        <li><a href="LibSugerencias.html">Buzón de Sugerencias</a></li>
+                        <li><a href="LibReclamaciones.html"><i class="fas fa-book"></i> Libro de Reclamaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +51 900 693 140</p>
+                    <p><i class="fas fa-envelope"></i> info@ritmoandino.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Independencia 787 Cajamarca, Perú</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <a href="https://www.facebook.com/ritmo.andino.2024/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ritmo_andino2024/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Ritmo_Andino"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com/@ritmoandino2024?si=JHHBY-_9ZGddXfm1"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 RitmoAndino - Agencia de Viajes | Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+    <script src="Java/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquete3</title>
+    <link rel="stylesheet" href="Estilos/paquete1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+        <!-- Barra de navegación -->
+<nav>
+    <div class="menu-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Img/logo.svg" alt="Logo" class="logo-img">
+            </a>        </div>
+        <!-- Contenedor de los enlaces del menú -->
+        <div class="menu-items" id="menu-items">
+            <a href="index.html">Inicio</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Paquetes.html">Paquetes</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+        <!-- Botón de Menú Hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+        </div>
+    </div>
+</nav>
+ 
+<header>
+    <h1> Paquete: Cajamarca Tradicional 3D/2N</h1>
+</header>
+
+<main>
+    <!-- Contenido principal -->
+    <section class="main-content">
+        <div class="image-container">
+            <img src="Img-Paquete/Cajamarca4d.jpg" alt="Catarata Tambillo">
+        </div>
+        <div class="package-details">
+            <h2>🌞 3 Día/ 🌚 2 Noche </h2>
+            <p><strong>Desde:</strong> S/ 500</p>
+            <p><strong>Ubicación:</strong> Cajamarca</p>
+            <p><strong>Incluye:</strong> Boletos de entradas a todos los atractivos turístico, Pozo privado, Paseo en Bote, etc.   </p>
+            <button class="btn" onclick="scrollToSection('detalles')">Ver detalle</button>
+            <button class="btn" onclick="scrollToSection('reserva')">Reservar</button>
+        </div>
+    </section>
+
+    <!-- Pestañas (Tabs) -->
+    <section id="detalles" class="tabs">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'includes')">Incluye</button>
+            <button class="tab-link" onclick="openTab(event, 'itinerary')">Itinerario</button>
+            <button class="tab-link" onclick="openTab(event, 'conditions')">Condiciones</button>
+        </div>
+        <div class="tab-content">
+            <div id="includes" class="tab-pane active">
+                <h3>Incluye</h3>
+                <ul>
+                    <li> 🎫 Boletos de entradas a todos los atractivos turístico
+                    </li>
+                    <li> 🏇 Guía Oficial de turismo
+                    </li>
+                    <li>🚌 Transporte 
+                    </li>
+                    <li>🚣 Paseo en Bote 
+                    </li>
+                    <li>🕳️ Pozo privado</li>
+                    <li>🧻 Toalla 
+                    </li>
+                    <li>🏨 3 noches de alojamiento en Hotel
+                    </li>
+                    <li>🍵 3  desayunos según el alojamiento seleccionado.
+                    </li>
+                    <li>🍶 Agua y souvenir de bienvenida 
+                    </li>
+                </ul>
+            </div>
+            <div id="itinerary" class="tab-pane">
+                    <!-- Ruta del Dia 1 -->
+                    <span class="day-number">DÍA 1</span>
+                    <div class="day-details">
+                        <!-- Ruta de la Mañana -->
+                        <div class="route-section">
+                            <h3 class="route-title">TOUR 1: ALAMEDA DE LOS INCAS, LAGUNA SAN NICOLÁS Y NAMORA – COMPARTIDO </h3>
+                            <ul>
+                                <li><strong>9:15 a.m.:</strong> Nos encontramos en la plaza de Cajamarca.</li>
+                                <li><strong>Nos dirigimos a la Laguna de San Nicolás. Nuestra primera parada es en el complejo Qhapac Ñan, para visitar la alameda de los Incas con Altura de 2750 m s. n. m.</strong></li>
+                                <li><strong>10:15 a.m.:</strong>La segunda parada es en el pueblo de Namora, aprovecharemos para visitar el pueblo, los talleres de guitarra, probar su cachanga frita y disfrutaremos de un almuerzo típico a base de cuy, trucha o cerdo. La altura de Namora sobre el nivel del mar es de  2,733 m.</li>
+                                <li><strong>12:30 p.m.:</strong>Nuestra tercera parada es la laguna San Nicolás, donde nos tomaremos un momento para apreciar la belleza de su paisaje, en sus casi 2 km de extensión alberga una infinidad de aves endémicas y migratorias que podremos observar y podrán disfrutar de un paseo en bote de totora y almuerzo en Namora</li>
+                            </ul>
+                            <p>Finalizamos actividades aprox. <strong>1:40 pm</strong>.</p>
+                        </div>
+            
+                        <!-- Ruta de la Tarde -->
+                        <div class="route-section">
+                            <h3 class="route-title">TOUR 2: HACIENDA LA COLLPA Y RUTA DE LA CERÁMICA – COMPARTIDO </h3>
+                            <p>¡Disfruta de una tarde divertida! Conoce la Hacienda La Colpa, famosa por su “llamada de vacas”.</p>
+                            <ul>
+                                <li><strong>3:15 p.m.:</strong> Nos encontramos en la plaza de armas</li>
+                                <li><strong>3:30 p.m.:</strong> Nos damos una vuelta por la Hacienda Colpa, una de las haciendas ganaderas más antiguas de Cajamarca, donde el atractivo principal es el famoso llamado de vacas por su nombre. Esta hacienda se encuentra ubicada a la altura 2,346 m.s.n.m.</li>
+                                <li><strong>5:30 p.m.:</strong> Luego visitaremos el taller de los artesanos de Mollepampa,  lugar famoso porque conserva temática, simbología y tradición de la cultura  Caxamarca, en el taller no solo podrás ver las maravillosas piezas de cerámica, sino también podrás tener la oportunidad de moldear en el  torno tu propia cerámica, sentir la conexión con el barro que deja una sensación especial de felicidad. </li>
+                            </ul>
+                            <p>Finalizamos actividades.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ruta del Dia 2 -->
+                    <span class="day-number">DÍA 2</span>
+                    <div class="day-details">
+                        <!-- Ruta de la Mañana -->
+                        <div class="route-section">
+                            <h3 class="route-title">TOUR 3:PICAPEDREROS DE HUAMBOCANCHA Y GRANJA PORCÓN – COMPARTIDO </h3>
+                            <p>Disfruta del poncho verde de Cajamarca y la naturaleza en Granja Porcón.</p>
+                           <ul>
+                                <li><strong>9:15 a.m.:</strong> Nos encontramos en la plaza de Cajamarca.</li>
+                                <li><strong>Iniciamos nuestro recorrido visitando a los picapedreros de Huambocancha, donde apreciamos finas obras de arte talladas en piedra de cantera y marmolina. La altura de este lugar con respecto al nivel del mar es de 2850 m.</strong></li>
+                                <li><strong>10:30 a.m.:</strong>Granja Porcón nos recibe con una hermosa vista del bosque de pinos, ”Árbol terapia” visitaremos el zoológico donde apreciamos diferentes especies de animales del Perú y el mundo. La altura es de alrededor 3.000 m. s. n. m. y los 4.000 m. s. n. m.</li>
+                                <li><strong>11:45 a.m.:</strong>Conoceremos el taller artesanal de telares, un fino arte ancestral que pasa de generación en generación. </li>
+                            </ul>
+                            <p>Regreso a Cajamarca aprox. <strong>2:00 pm</strong>.</p>
+                        </div>
+            
+                        <!-- Ruta de la Tarde -->
+                        <div class="route-section">
+                            <h3 class="route-title">TOUR 4: VENTANILLAS DE OTUZCO Y JARDÍN DE LAS HORTENSIAS – COMPARTIDO </h3>
+                            <p>¡Conoce uno de los cementerios más antiguos del Perú, disfruta del hermoso jardín de las Hortensias y vive una experiencia única en el Fundo Los Alpes!</p>
+                            <ul>
+                                <li><strong>3:15 p.m.:</strong> Nos encontramos en la plaza de armas</li>
+                                <li><strong>3:30 p.m.:</strong>Visitamos las ventanillas de Otuzco, viejo cementerio Pre Inca, que guarda la historia de nuestros antepasados Cashamarcas. La altura sobre el nivel del mar es de 2650 m.</li>
+                                <li><strong>5:00 p.m.:</strong>  Luego caminaremos por el viejo puente colgante del distrito de Otuzco.  </li>
+                                <li><strong>5:30 p.m.:</strong>También visitaremos el Jardín de las Hortensias y el fundo los Alpes donde podremos ver los procesos de transformación de los derivados lácteos.</li>
+                            </ul>
+                            <p>Regreso a Cajamarca aprox. <strong>7:00 pm</strong>.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Ruta del Dia 3 -->
+                    <span class="day-number">DÍA 3</span>
+                    <div class="day-details">
+                        <!-- Ruta de la Mañana -->
+                        <div class="route-section">
+                            <h3 class="route-title">TOUR 5: CUMBEMAYO – COMPARTIDO  </h3>
+                            <p>¡Explora el impresionante bosque de piedras de Cumbemayo! donde disfrutarás de un escenario único que alberga figuras de piedra que representan a animales y personas.  Además, conocerás más de la historia de sus petroglifos y su acueducto. 
+
+                                Ubicado a 3.500 m s. n. m.</p>
+                           <ul>
+                                <li><strong>9:15 a.m.:</strong> Nos encontramos en la plaza de Cajamarca.</li>
+                                <li><strong>9:30 a.m.:</strong>Salida rumbo a Cumbemayo, nuestra primera parada la hacemos en el mirador de Bellavista. </li>
+                                <li><strong>10:00 a.m.:</strong>Visitaremos el bosque de piedras de Cumbemayo, santuario ceremonial de rito al agua de la época Pre – Inca, lugar de bellos paisajes, aire puro e increíble acueducto hidráulico, que hacen de la visita una experiencia de des estrés y tranquilidad para nuestros visitantes. </li>
+                                <li><strong>12:30 p.m.:</strong>Retorno a Cajamarca </li>
+
+                            </ul>
+                            <p>Regreso a Cajamarca aprox. <strong>1:00 pm</strong>.</p>
+                        </div>
+            
+                        <!-- Ruta de la Tarde -->
+                        <div class="route-section">
+                            <h3 class="route-title">TOUR 6: BAÑOS DEL INCA                            </h3>
+                            <p>¡Conoce uno de los cementerios más antiguos del Perú, disfruta del hermoso jardín de las Hortensias y vive una experiencia única en el Fundo Los Alpes!</p>
+                            <ul>
+                                <li><strong>3:30 p.m.:</strong>Seguimos rumbo a disfrutar  de la bendición de las aguas termales en los Baños del Inca.
+                                    Seguimos con nuestra visita al complejo termal más grande del Perú, Baños del Inca, donde conoceremos el famoso pozo del Inca que conmemora el Recuerdo una noche antes de la captura del Inca Atahualpa. 
+                                    También podrás disfrutar de un refrescante baño en sus terapéuticas aguas y pozos termales.  
+                                    Este lugar tiene la altura de 2667 m s. n. m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div id="conditions" class="tab-pane">
+                <h3>Condiciones</h3>
+                <ul>
+                    <li>El paquete mínimo es para dos personas.</li>
+                    <li>Impuesto General a las Ventas (IGV) incluido.</li>
+                    <li>Validez de la oferta: 5 días hábiles.</li>
+                    <li>Reservas requieren el 100% del pago.</li>
+                    <li>Consentimiento de uso de datos exclusivos para TM Travel y fines, (traslado y alojamiento o restaurante si fuera el caso), de igual manera  serán usados también para enviar futuras promociones.</li>
+                    <li>Consentimiento del uso de fotografías durante los  recorrido turísticos con fines publicitarios.
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- Reserva -->
+<aside id="reserva" class="booking">
+    <h3>Ahora puedes realizar tu reserva en línea</h3>
+    <label for="date">Elige tu fecha de llegada:</label>
+    <input type="date" id="date" required>
+    <div class="pricing">
+        <p><strong>Precio del Producto:</strong> S/ 500.00 x <span id="quantityDisplay">1</span></p>
+        <p><strong>Total:</strong> S/ <span id="total">500.00</span></p>
+    </div>
+    <label for="quantity">Cantidad de personas:</label>
+    <input 
+        type="number" 
+        id="quantity" 
+        value="1" 
+        min="1">
+    
+        <button class="btn" id="addToCart">Añadir al carrito</button>
+        <div id="overlay" class="overlay">
+            <div class="bus-animation-container">
+                <div class="bus-animation"></div>
+                <p>Espere un momento...</p>
+            </div>
+        </div>      
+        <div class="whatsapp">
+            <button class="btn-whatsapp" id="whatsappButton">
+                Reservar por WhatsApp
+            </button>
+            <p class="whatsapp-text">Ahora puedes reservar directamente a nuestro WhatsApp con un solo click.</p>
+        </div>
+</aside>
+
+
+</main>
+
+        <!-- Pie de página -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="TérminosCondi.html">Términos y Condiciones</a></li>
+                        <li><a href="PoliticaPriv.html">Política y Privacidad</a></li>
+                        <li><a href="LibSugerencias.html">Buzón de Sugerencias</a></li>
+                        <li><a href="LibReclamaciones.html"><i class="fas fa-book"></i> Libro de Reclamaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +51 900 693 140</p>
+                    <p><i class="fas fa-envelope"></i> info@ritmoandino.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Independencia 787 Cajamarca, Perú</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <a href="https://www.facebook.com/ritmo.andino.2024/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ritmo_andino2024/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Ritmo_Andino"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com/@ritmoandino2024?si=JHHBY-_9ZGddXfm1"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 RitmoAndino - Agencia de Viajes | Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <script src="Java/paquete3.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour1</title>
+    <link rel="stylesheet" href="Estilos/style_tour1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+<nav>
+    <div class="menu-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Img/logo.svg" alt="Logo" class="logo-img">
+            </a>        </div>
+        <!-- Contenedor de los enlaces del menú -->
+        <div class="menu-items" id="menu-items">
+            <a href="index.html">Inicio</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Paquetes.html">Paquetes</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+        <!-- Botón de Menú Hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+        </div>
+    </div>
+</nav>
+
+<header>
+    <h1>Tour: Caminata a Catarata de Tambillo</h1>
+</header>
+
+<main>
+    <!-- Contenido principal -->
+    <section class="main-content">
+        <div class="image-container">
+            <img src="Img-Tours/CatarataTambillo.jpg" alt="Catarata Tambillo">
+        </div>
+        <div class="package-details">
+            <h2>1 Día</h2>
+            <p><strong>Desde:</strong> S/ 140</p>
+            <p><strong>Ubicación:</strong> Cajamarca</p>
+            <p><strong>Incluye:</strong> Traslado, Guía, Almuerzo</p>
+            <button class="btn" onclick="scrollToSection('detalles')">Ver detalle</button>
+            <button class="btn" onclick="scrollToSection('reserva')">Reservar</button>
+        </div>
+    </section>
+
+    <!-- Pestañas (Tabs) -->
+    <section id="detalles" class="tabs">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'includes')">Incluye</button>
+            <button class="tab-link" onclick="openTab(event, 'itinerary')">Itinerario</button>
+            <button class="tab-link" onclick="openTab(event, 'conditions')">Condiciones</button>
+        </div>
+        <div class="tab-content">
+            <div id="includes" class="tab-pane active">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado</li>
+                    <li>Guía</li>
+                    <li>Agua Mineral</li>
+                    <li>Bastón de trekking</li>
+                    <li> Almuerzo</li>
+                </ul>
+            </div>
+            <div id="itinerary" class="tab-pane">
+                <h3>Itinerario</h3>
+                <ul>
+                    <li><strong>8:30 a.m.:</strong> Encuentro en la Plazuela Belén.</li>
+                    <li><strong>9:30 a.m.:</strong> Caminata en el bosque del Tambillo.</li>
+                    <li><strong>11:00 a.m.:</strong> Llegada a la catarata del Tambillo.</li>
+                    <li><strong>1:00 p.m.:</strong> Retorno a Cajamarca.</li>
+                </ul>
+            </div>
+            <div id="conditions" class="tab-pane">
+                <h3>Condiciones</h3>
+                <ul>
+                    <li>El paquete mínimo es para dos personas.</li>
+                    <li>Impuesto General a las Ventas (IGV) incluido.</li>
+                    <li>Validez de la oferta: 5 días hábiles.</li>
+                    <li>Reservas requieren el 100% del pago.</li>
+                    <li>Niños menores de 4 años no pagan, mayores de 12 años pagan como adultos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- Reserva -->
+<aside id="reserva" class="booking">
+    <h3>Ahora puedes realizar tu reserva en línea</h3>
+    <label for="date">Elige tu fecha de llegada:</label>
+    <input type="date" id="date" required>
+    <div class="pricing">
+        <p><strong>Precio del Producto:</strong> S/ 140.00 x <span id="quantityDisplay">1</span></p>
+        <p><strong>Total:</strong> S/ <span id="total">140.00</span></p>
+    </div>
+    <label for="quantity">Cantidad de personas:</label>
+    <input 
+        type="number" 
+        id="quantity" 
+        value="1" 
+        min="1">
+    
+        <button class="btn" id="addToCart">Añadir al carrito</button>
+        <div id="overlay" class="overlay">
+            <div class="bus-animation-container">
+                <div class="bus-animation"></div>
+                <p>Espere un momento...</p>
+            </div>
+        </div>      
+        <div class="whatsapp">
+            <button class="btn-whatsapp" id="whatsappButton">
+                Reservar por WhatsApp
+            </button>
+            <p class="whatsapp-text">Ahora puedes reservar directamente a nuestro WhatsApp con un solo click.</p>
+        </div>
+</aside>
+
+
+</main>
+
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="TérminosCondi.html">Términos y Condiciones</a></li>
+                    <li><a href="PoliticaPriv.html">Política y Privacidad</a></li>
+                    <li><a href="LibSugerencias.html">Buzón de Sugerencias</a></li>
+                    <li><a href="LibReclamaciones.html"><i class="fas fa-book"></i> Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> +51 900 693 140</p>
+                <p><i class="fas fa-envelope"></i> info@ritmoandino.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Independencia 787 Cajamarca, Perú</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/ritmo.andino.2024/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ritmo_andino2024/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Ritmo_Andino"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com/@ritmoandino2024?si=JHHBY-_9ZGddXfm1"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 RitmoAndino - Agencia de Viajes | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="Java/tour1.js"></script>
+
+</body>
+</html>

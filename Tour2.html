@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour2</title>
+    <link rel="stylesheet" href="Estilos/tour2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="menu-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Img/logo.svg" alt="Logo" class="logo-img">
+                </a>        </div>
+            <!-- Contenedor de los enlaces del menú -->
+            <div class="menu-items" id="menu-items">
+                <a href="index.html">Inicio</a>
+                <a href="Tours.html">Tours</a>
+                <a href="Paquetes.html">Paquetes</a>
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Contacto.html">Contacto</a>
+            </div>
+            <!-- Botón de Menú Hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Tour: Alameda de los Incas, Polloc, Namora, Laguna San Nicolás Y Hacienda la Collpa</h1>
+    </header>
+    
+    <main>
+        <!-- Contenido principal -->
+        <section class="main-content">
+            <div class="image-container">
+                <img src="Img-Tours/Alameda.jpg" alt="Catarata Tambillo">
+            </div>
+            <div class="package-details">
+                <h2>1 Día</h2>
+                <p><strong>Desde:</strong> S/ 350</p>
+                <p><strong>Ubicación:</strong> Cajamarca</p>
+                <p><strong>Incluye:</strong> Movilidad, Recojo, Entradas</p>
+                <button class="btn" onclick="scrollToSection('detalles')">Ver detalle</button>
+                <button class="btn" onclick="scrollToSection('reserva')">Reservar</button>
+            </div>
+        </section>
+    
+        <!-- Pestañas (Tabs) -->
+        <section id="detalles" class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-link active" onclick="openTab(event, 'includes')">Incluye</button>
+                <button class="tab-link" onclick="openTab(event, 'itinerary')">Itinerario</button>
+                <button class="tab-link" onclick="openTab(event, 'conditions')">Condiciones</button>
+            </div>
+            <div class="tab-content">
+                <div id="includes" class="tab-pane active">
+                    <h3>Incluye</h3>
+                    <ul>
+                        <li> MOVILIDAD: Auto privado, cómodo, limpio y con buena música (Bluetooth). </li>
+                        <li>RECOJO: Desde su hotel y llegada hasta su hotel. </li>
+                        <li> ENTRADAS: A todos los lugares y paseo en bote </li>
+
+                    </ul>
+                </div>
+                <div id="itinerary" class="tab-pane">
+                    <h3>Itinerario</h3>
+                    <ul>
+                        <li><strong>8:00 a.m.:</strong>  Los recogemos de su hospedaje para iniciar nuestro recorrido.</li>
+                        <li><strong>8:30 a.m.:</strong> Nuestra primera parada es en el complejo Qhapac Ñan, para visitar la Alameda de los Incas. </li>
+                        <li><strong>9:30 a.m.:</strong> Continuamos nuestro camino hacia el C.P. donde visitamos el Santuario de la Virgen del Rosario de Polloc, hermosa construcción religiosa trabajada por la congregación italiana de don Bosco en coordinación con el centro poblado de Polloc.</li>
+                        <li><strong>11:30 a.m.:</strong> Luego visitamos el pueblo de Namora, la tierra de las guitarras y el capulí, donde aprovecharemos para visitar a los artesanos con especialidad en fabricación de guitarras y luego nos daremos una vuelta por la casa del alfajor, donde tendremos la oportunidad de degustar de sus ricos postres.</li>
+                        <li><strong>1:30 p.m.:</strong> Recorremos la laguna San Nicolás, donde nos tomaremos un momento para apreciar la belleza de su paisaje, en sus casi 2 km de extensión alberga una infinidad de aves endémicas y migratorias que podremos observar, también se podrá disfrutar de un paseo en totora en el lago. </li>
+                        <li><strong>2:30 p.m.:</strong> Seguimos nuestro camino al distrito de para visitar la ex hacienda La Colpa, este lugar es conocido por su  espectáculo el famoso llamado de las vacas.</li>
+                    </ul>
+                </div>
+                <div id="conditions" class="tab-pane">
+                    <h3>Condiciones</h3>
+                    <ul>
+                        <li>Cantidad de personas: El paquete mínimo es para CUATRO personas.</li>
+                        <li>Impuestos: El Impuesto General a las Ventas (IGV) está incluido en el precio del paquete turístico.</li>
+                        <li>Validez de la Oferta: La oferta tiene una validez de cinco (05) días hábiles, a partir de la entrega de la cotización.</li>
+                        <li>Consentimiento de uso de datos exclusivos para TM Travel y fines, (traslado y alojamiento o restaurante si fuera el caso), de igual manera  serán usados también para enviar futuras promociones.</li>
+                        <li>Consentimiento del uso de fotografías durante los  recorrido turísticos con fines publicitarios.</li>
+                        <li>Cambios en la reserva: Se pueden realizar cambios en la reserva con una anticipación mínima de 8 horas.</li>
+                        <li>Anulaciones: En caso de no presentarse (No Show) o cancelar la reserva después de haber realizado el pago, se puede cambiar la fecha del viaje o posponerlo, pero no se realizará ningún reembolso.</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+    <!-- Reserva -->
+    <aside id="reserva" class="booking">
+        <h3>Ahora puedes realizar tu reserva en línea</h3>
+        <label for="date">Elige tu fecha de llegada:</label>
+        <input type="date" id="date" required>
+        <div class="pricing">
+            <p><strong>Precio del Producto:</strong> S/ 350.00 x <span id="quantityDisplay">1</span></p>
+            <p><strong>Total:</strong> S/ <span id="total">350.00</span></p>
+        </div>
+        <label for="quantity">Cantidad de personas:</label>
+        <input 
+            type="number" 
+            id="quantity" 
+            value="1" 
+            min="1">
+        
+            <button class="btn" id="addToCart">Añadir al carrito</button>
+            <div id="overlay" class="overlay">
+                <div class="bus-animation-container">
+                    <div class="bus-animation"></div>
+                    <p>Espere un momento...</p>
+                </div>
+            </div>      
+            <div class="whatsapp">
+                <button class="btn-whatsapp" id="whatsappButton">
+                    Reservar por WhatsApp
+                </button>
+                <p class="whatsapp-text">Ahora puedes reservar directamente a nuestro WhatsApp con un solo click.</p>
+            </div>
+    </aside>
+    </main>
+    
+        <!-- Pie de página -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="TérminosCondi.html">Términos y Condiciones</a></li>
+                        <li><a href="PoliticaPriv.html">Política y Privacidad</a></li>
+                        <li><a href="LibSugerencias.html">Buzón de Sugerencias</a></li>
+                        <li><a href="LibReclamaciones.html"><i class="fas fa-book"></i> Libro de Reclamaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +51 900 693 140</p>
+                    <p><i class="fas fa-envelope"></i> info@ritmoandino.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Independencia 787 Cajamarca, Perú</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <a href="https://www.facebook.com/ritmo.andino.2024/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ritmo_andino2024/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Ritmo_Andino"><i class="fab fa-twitter"></i></a>
+                    <a href="https://youtube.com/@ritmoandino2024?si=JHHBY-_9ZGddXfm1"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 RitmoAndino - Agencia de Viajes | Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="Java/tour2.js"></script>
+    
+    </body>
+    </html>
